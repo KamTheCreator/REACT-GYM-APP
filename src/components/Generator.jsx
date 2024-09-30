@@ -1,11 +1,31 @@
 import React from 'react'
 import SectionWrapper from './SectionWrapper'
+import { WORKOUTS } from '../utils/swoldier'
+
+function Header(props){
+  const {index, title,description } = props
+  return(
+    <div className='flex flex-col gap-4'>
+      <div className='flex items-center justify-center gap-2'>
+        <p className='text-3xl sm:text-4xl md:text-5xl  font-semibold  text-slate-400'>{index}</p>
+        <h4 className='text-lg sm:text-2xl  md:text-3xl '>{title}</h4>
+
+
+      </div>
+      <p className='text-sm sm:text-base mx-auto'>{description}</p>
+    </div>
+  )
+}
 
 export default function Generator() {
   return (
     <SectionWrapper header={"generate your workout "} 
     title={['it\'s' , 'huge', '0\'clock' ]}>
-        adseceece
+      <Header index={'01'} title={'pick your poison'} 
+      description={'select the workout your wish to do '}/>
+      {Object.keys(WORKOUTS) .map}
+    
+     
     </SectionWrapper>
   )
 }
