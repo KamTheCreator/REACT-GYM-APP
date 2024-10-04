@@ -1,5 +1,4 @@
 import React from 'react'
-import Button from './Button'
 
 export default function Hero() {
   return (
@@ -15,8 +14,9 @@ export default function Hero() {
          <span className='text-blue-400 font-medium'> i would fine something to put here </span>
          <span className='text-blue-400 font-medium'> and also here </span>
          </p>
-         <Button text={"Accept & Beignn"}></Button>
-          
+         <button className='px-8 py-4 rounded-md border-[2px] border-solid blueshadow border-blue-400  duration-200 '>
+            <p> Accept and begin</p>
+         </button>
 
     </div>
   )
