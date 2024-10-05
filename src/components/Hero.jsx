@@ -15,7 +15,9 @@ export default function Hero() {
          <span className='text-blue-400 font-medium'> i would fine something to put here </span>
          <span className='text-blue-400 font-medium'> and also here </span>
          </p>
-         <Button text={"Accept & Beignn"}></Button>
+         <Button  func={() =>
+          window.location.href = '#generate'
+         } text={"Accept & Beignn"}></Button>
           
 
     </div>
